@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Geolocation, Notification, Media</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="popup popup-location hidden">
+        <div class="popup-content">
+          <p>Что-то пошло не так</p>
+          <p>
+            К сожалению, нам не удалось определить ваше местоположение,
+            пожалуйста, дайте разрешение на использование геолокации, либо
+            введите координаты вручную
+          </p>
+          <p>Широта и долгота через запятую</p>
+        </div>
+        <input type="text" class="input-popup" />
+        <span class="span-error"></span>
+        <div class="form-footer">
+          <button type="submit" class="btn confirm">OK</button>
+          <button type="reset" class="btn cancel">Отмена</button>
+        </div>
+      </div>
+      <div class="popup popup-permission hidden">
+        <div class="popup-content">
+          <p>К сожалению, доступ к камере и/или микрофону запрещен</p>
+        </div>
+        <button type="reset" class="btn cancel">Отмена</button>
+      </div>
+      <div class="timeline">
+        <div class="message-list">
+          <div class="message">
+            <div class="date">15.03.19 08:40</div>
+            <div class="message-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              reiciendis pariatur consequuntur nulla sapiente nesciunt nobis?
+              Dolores nemo saepe, tempora fugit doloribus ratione porro sint
+              eaque quae incidunt et repudiandae.
+            </div>
+            <span class="location">[51.50581, -0.12571]</span>
+            <i class="fa fa-eye"></i>
+          </div>
+        </div>
+        <div class="input-div">
+          <input
+            id="input-message"
+            class="input-message"
+            placeholder="Type your message here"
+          />
+          <div class="icons">
+            <i class="fa fa-microphone icon" aria-hidden="true"></i>
+            <i class="fa fa-camera icon" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="media-div hidden">
+          <div class="icons">
+            <i class="fa fa-check icon" aria-hidden="true"></i>
+            <i class="timer"></i>
+            <i class="fa fa-times icon" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
